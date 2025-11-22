@@ -1,0 +1,16 @@
+#cloud-config
+hostname: geralt
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    shell: /bin/bash
+    ssh-authorized-keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICWb0eh3pfOfdWtBIqjlXm6bAkKB9MiPSVOuIbLLCbi6 mandeb13@deb13
+
+chpasswd:
+  expire: False
+  users:
+    - name: ubuntu
+      password: asdasd
+      type: text
