@@ -1,5 +1,5 @@
 #cloud-config
-hostname: geralt
+hostname: sardinillas
 users:
   - name: debian
     sudo: ALL=(ALL) NOPASSWD:ALL
@@ -14,3 +14,5 @@ chpasswd:
     - name: debian
       password: asdasd
       type: text
+
+

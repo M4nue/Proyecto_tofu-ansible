@@ -1,9 +1,9 @@
 - name: ensure mariadb is installed
   apt:
-    pkg:
+    name:
       - mariadb-server
       - python3-mysqldb
-    state: latest
+    state: present
     update_cache: yes
 
 - name: Crear base de datos

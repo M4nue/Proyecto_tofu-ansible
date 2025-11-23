@@ -6,11 +6,17 @@ all:
           ansible_host: 192.168.201.2
           ansible_user: debian
           ansible_ssh_private_key_file: /home/mandeb13/.ssh/key-github
-          
+
+    servidores_php-fpm:
+      hosts:
+        sardinillas:
+          ansible_host: 192.168.201.4
+          ansible_user: debian
+          ansible_ssh_private_key_file: /home/mandeb13/.ssh/key-github
 
     servidores_bd:
       hosts:
         geralt:
           ansible_host: 192.168.201.3
-          ansible_user: ubuntu
+          ansible_user: debian
           ansible_ssh_private_key_file: /home/mandeb13/.ssh/key-github

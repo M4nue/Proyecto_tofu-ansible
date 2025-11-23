@@ -11,6 +11,7 @@
     block: |
       10.0.0.2 geralt.example.org
       10.0.0.3 thor.example.org
+      10.0.0.4 sardinillas.example.org
     owner: root
     group: root
     mode: '0644'

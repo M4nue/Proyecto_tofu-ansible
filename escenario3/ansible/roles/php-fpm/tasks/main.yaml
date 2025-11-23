@@ -1,0 +1,20 @@
+- name: Instalar paquete php-fpm
+  apt:
+    name:
+      - php-fpm
+      - php-mysql
+      - php-cli
+      - php-common
+      - php-mbstring
+    state: present
+    update_cache: yes
+
+
+- name: Copiar archivo www.conf
+  ansible.builtin.copy:
+    src: ../files/www.conf
+    dest: /etc/php/8.4/fpm/pool.d/www.conf
+    owner: root
+    group: root
+    mode: '0644'
+  notify: restart php8.4-fpm

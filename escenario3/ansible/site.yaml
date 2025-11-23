@@ -8,6 +8,12 @@
   roles:
    - role: nginx
 
+- hosts: servidores_php-fpm
+  become: true
+  roles:
+   - role: php-fpm
+
+
 - hosts: servidores_bd
   become: true
   roles:
