@@ -4,7 +4,7 @@ all:
       hosts:
         thor:
           ansible_host: 192.168.201.2
-          ansible_user: debian
+          ansible_user: ubuntu
           ansible_ssh_private_key_file: /home/mandeb13/.ssh/key-github
 
     servidores_php-fpm:
@@ -18,5 +18,5 @@ all:
       hosts:
         geralt:
           ansible_host: 192.168.201.3
-          ansible_user: debian
+          ansible_user: ubuntu
           ansible_ssh_private_key_file: /home/mandeb13/.ssh/key-github

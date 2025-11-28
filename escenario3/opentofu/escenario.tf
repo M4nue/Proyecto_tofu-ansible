@@ -45,7 +45,7 @@ locals {
       name       = "thor"
       memory     = 1024
       vcpu       = 1
-      base_image = "debian13-base.qcow2"
+      base_image = "ubuntu2404-base.qcow2"
 
       networks = [
         { network_name = "red-externa", wait_for_lease = true },
@@ -61,7 +61,7 @@ locals {
       name       = "geralt"
       memory     = 1024
       vcpu       = 1
-      base_image = "debian13-base.qcow2"
+      base_image = "ubuntu2404-base.qcow2"
 
       networks = [
         { network_name = "red-externa", wait_for_lease = true },
